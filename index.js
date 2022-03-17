@@ -7,6 +7,8 @@ const { getFilesFromDir } = require('./modules/getFilesFromDir');
 
 const { wordCounter } = require('./modules/wordCounter');
 
+const pathCheck = require('./modules/pathCheck');
+
 
 print(content); // В консоли выводится значение content
 
@@ -19,3 +21,8 @@ console.log('\nВ этой дирректории, есть файлы:', getFil
 // скрипт, который который считает количество слов каком-нибудь файле
 const filePath = './files/excalibur-song.txt';
 console.log('Кол-во слов в файле', path.basename(filePath), '=', wordCounter(filePath), '\n');
+
+
+// скрипт, который который берет из файла пути, и проверяет существование пути
+const routes = './files/pathes.txt';
+pathCheck(routes);
