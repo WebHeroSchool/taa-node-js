@@ -11,6 +11,8 @@ const pathCheck = require('./modules/pathCheck');
 
 const showDiff = require('./modules/showDiff');
 
+const watcher = require('./modules/watcher');
+
 
 print(content); // В консоли выводится значение content
 
@@ -37,3 +39,11 @@ const files = [
 ];
 console.log('\nСравнение 2х файлов:');
 showDiff(files);
+
+
+// Запуск слежки за следующими фалами, теперь их можно изменять, и видеть реакцию на изменения
+const filesForWatch = [
+  './files/file-3.txt',
+  './files/file-4.txt',
+];
+watcher(filesForWatch);
