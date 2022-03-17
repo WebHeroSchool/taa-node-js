@@ -1,5 +1,5 @@
-const { scanWorkDir } = require('./scanWorkDir');
-const { filterByFiles } = require('./filterByFiles');
+const scanWorkDir = require('./scanWorkDir');
+const filterByFiles = require('./filterByFiles');
 
 
 const getFilesFromDir = workDirPath => {
@@ -16,4 +16,4 @@ const getFilesFromDir = workDirPath => {
 };
 
 
-module.exports = { getFilesFromDir };
+module.exports = getFilesFromDir;

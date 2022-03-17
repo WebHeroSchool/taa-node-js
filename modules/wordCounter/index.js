@@ -1,4 +1,4 @@
-const { getSplitedFile } = require('./getSplitedFile');
+const getSplitedFile = require('./getSplitedFile');
 
 
 const wordCounter = (filePath) => {
@@ -14,4 +14,4 @@ const wordCounter = (filePath) => {
 };
 
 
-module.exports = { wordCounter };
+module.exports = wordCounter;

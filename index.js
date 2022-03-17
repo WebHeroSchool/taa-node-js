@@ -1,11 +1,11 @@
 const path = require('path');
 
-const { print } = require('./modules/print');
-const { content } = require('./modules/content');
+const print = require('./modules/print');
+const content = require('./modules/content');
 
-const { getFilesFromDir } = require('./modules/getFilesFromDir');
+const getFilesFromDir = require('./modules/getFilesFromDir');
 
-const { wordCounter } = require('./modules/wordCounter');
+const wordCounter = require('./modules/wordCounter');
 
 const pathCheck = require('./modules/pathCheck');
 

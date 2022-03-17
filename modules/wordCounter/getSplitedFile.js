@@ -19,4 +19,4 @@ const getSplitedFile = (filePath) => {
 };
 
 
-module.exports = { getSplitedFile };
+module.exports = getSplitedFile;

@@ -12,4 +12,4 @@ const filterByFiles = (dir) => {
 };
 
 
-module.exports = { filterByFiles };
+module.exports = filterByFiles;

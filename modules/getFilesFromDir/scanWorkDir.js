@@ -12,4 +12,4 @@ const scanWorkDir = workDirPath => {
 };
 
 
-module.exports = { scanWorkDir };
+module.exports = scanWorkDir;
