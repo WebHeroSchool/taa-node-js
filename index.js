@@ -1,7 +1,11 @@
+const path = require('path');
+
 const { print } = require('./modules/print');
 const { content } = require('./modules/content');
+
 const { getFilesFromDir } = require('./modules/getFilesFromDir');
-const path = require('path');
+
+const { wordCounter } = require('./modules/wordCounter');
 
 
 print(content); // В консоли выводится значение content
@@ -9,4 +13,9 @@ print(content); // В консоли выводится значение content
 
 // скрипт, который сканирует рабочую директорию и выводит список всех файлов
 const workDir = path.resolve();
-console.log(getFilesFromDir(workDir));
+console.log('\nВ этой дирректории, есть файлы:', getFilesFromDir(workDir), '\n');
+
+
+// скрипт, который который считает количество слов каком-нибудь файле
+const filePath = './files/excalibur-song.txt';
+console.log('Кол-во слов в файле', path.basename(filePath), '=', wordCounter(filePath), '\n');
