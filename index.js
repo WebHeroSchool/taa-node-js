@@ -9,6 +9,8 @@ const wordCounter = require('./modules/wordCounter');
 
 const pathCheck = require('./modules/pathCheck');
 
+const showDiff = require('./modules/showDiff');
+
 
 print(content); // В консоли выводится значение content
 
@@ -26,3 +28,12 @@ console.log('Кол-во слов в файле', path.basename(filePath), '=', 
 // скрипт, который который берет из файла пути, и проверяет существование пути
 const routes = './files/pathes.txt';
 pathCheck(routes);
+
+
+// скрипт, который показывает разницу между двумя файлами
+const files = [
+  './files/file-1.txt',
+  './files/file-2.txt',
+];
+console.log('\nСравнение 2х файлов:');
+showDiff(files);
